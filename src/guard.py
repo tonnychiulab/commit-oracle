@@ -15,7 +15,7 @@ class SecurityGuard:
             r'-----BEGIN (RSA|OPENSSH|EC|PGP)? PRIVATE KEY-----'
         ]
 
-        sensitive_password_pattern = r'password\s*=\s*["\'][^"\']+["\']'
+        sensitive_password_pattern = r'(?i)(password|passwd|secret)\s*[:=]\s*["\'][^"\']+["\']'
 
         sensitive_file_extensions = ['.env', '.pem', 'id_rsa']
 
