@@ -1,8 +1,20 @@
 import argparse
+import os
 import subprocess
 import sys
-from src.guard import SecurityGuard
-from src.oracle import CommitOracle
+
+# Ensure project root is in sys.path
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
+try:
+    from src.guard import SecurityGuard
+    from src.oracle import CommitOracle
+except ImportError:
+    from guard import SecurityGuard
+    from oracle import CommitOracle
+
 
 def get_git_diff() -> str:
     try:
