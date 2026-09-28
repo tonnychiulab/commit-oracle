@@ -31,6 +31,18 @@ python3 -m unittest discover -s tests -p "test_*.py"
 
 ---
 
-## 授權
+## 致謝 (Acknowledgments)
+
+本專案之架構設計、工單拆解、代碼施工與逐張驗收提交流程，全程採用 [**thx0701/osslab-manager**](https://github.com/thx0701/osslab-manager) 的「技術長託管開發模式」（強模型當技術長拆單驗收，廉價 Flash 模型無頭施工，逐張本機驗收提交）。特別致謝原作者提供如此優秀的技能包體系！
+
+## 共同作者 (Co-Authors & Contributors)
+
+- **專案發起與需求指導**：專案擁有者
+- **技術架構與共同作者**：[**agy CLI (Google Antigravity CLI)**](https://antigravity.google)
+- **施工工人引擎**：`pi / gpt-4o-mini`
+
+---
+
+## 授權 (License)
 
 MIT License
